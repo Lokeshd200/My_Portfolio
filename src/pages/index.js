@@ -10,6 +10,25 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  let structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Pratham Agrawal",
+    url: "https://agrawalpratham.in",
+    sameAs: [
+      "https://www.linkedin.com/in/agrawalpratham/",
+      "https://github.com/agrawal-pratham",
+      "https://www.instagram.com/agrawal___pratham/",
+      "https://twitter.com/agrawal_2002",
+      "http://blogs.agrawalpratham.in/",
+      "https://solutions.agrawalpratham.in/",
+    ],
+    jobTitle: "Full Stack Web Developer",
+    description:
+      "Pratham Agrawal, a Full Stack Web Developer with expertise in building dynamic web applications and platforms. Explore my professional journey, projects, and skills in technologies like Next.js, ReactJS, Node.js, Firebase, AWS, and more. Discover how I lead the development of restaurant discovery platforms, LMS portals, and versatile web applications.",
+    image: "https://agrawalpratham.in/assets/png/og_img.png",
+  };
+
   return (
     <div>
       <Head>
@@ -35,7 +54,7 @@ export default function Home() {
         <link rel="manifest" href="site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d3f4f7" />
         <meta name="msapplication-TileColor" content="#d3f4f7" />
-        <meta name="theme-color" content="#d3f4f7" />{" "}
+        <meta name="theme-color" content="#d3f4f7" />
         <meta
           name="description"
           content="Pratham Agrawal, a Full Stack Web Developer with expertise in building dynamic web applications and platforms. Explore my professional journey, projects, and skills in technologies like Next.js, ReactJS, Node.js, Firebase, AWS, and more. Discover how I lead the development of restaurant discovery platforms, LMS portals, and versatile web applications."
@@ -60,7 +79,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://agrawalpratham.in/assets/png/me.jpg"
+          content="https://agrawalpratham.in/assets/png/og_img.png"
         />
         <meta property="og:url" content="https://agrawalpratham.in/" />
         <meta property="og:type" content="website" />
@@ -77,27 +96,12 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://agrawalpratham.in/assets/png/me.jpg"
+          content="https://agrawalpratham.in/assets/png/og_img.png"
         />
-        {/* <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Pratham Agrawal",
-        "url": "https://agrawalpratham.in",
-        "sameAs": [
-          "https://www.linkedin.com/in/agrawalpratham/",
-          "https://github.com/agrawal-pratham",
-          "https://www.instagram.com/agrawal___pratham/",
-          "https://twitter.com/agrawal_2002",
-          "http://blogs.agrawalpratham.in/",
-          "https://solutions.agrawalpratham.in/"
-        ],
-        "jobTitle": "Full Stack Web Developer",
-        "description": "Pratham Agrawal, an aspiring Full Stack Web Developer, is passionate about creating interactive web applications and experiences.",
-        "image": "https://agrawalpratham.in/assets/images/me_latest.jpg"
-      }
-    </script> */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
 
       <Header />
