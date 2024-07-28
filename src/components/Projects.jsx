@@ -78,6 +78,12 @@ export default function Projects() {
                   <div className="flex gap-4">
                     {project.liveLink && (
                       <Link
+                        onClick={() => {
+                          sendGAEvent({
+                            event: "buttonClicked",
+                            value: `Live Link - ${project.title}`,
+                          });
+                        }}
                         href={project.liveLink}
                         target="_blank"
                         className="btn btn--med btn--theme"
@@ -86,6 +92,12 @@ export default function Projects() {
                       </Link>
                     )}
                     <Link
+                      onClick={() => {
+                        sendGAEvent({
+                          event: "buttonClicked",
+                          value: `Code Link - ${project.title}`,
+                        });
+                      }}
                       href={project.codeLink}
                       target="_blank"
                       className="btn btn--med btn--theme-inv"

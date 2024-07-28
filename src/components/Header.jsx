@@ -90,19 +90,46 @@ export default function Header() {
         }`}
         onClick={toggleMenu}
       >
-        <Link href="#" className="block p-4 hover:bg-gray-100">
+        <Link
+          onClick={() => {
+            sendGAEvent({ event: "buttonClicked", value: "Home" });
+          }}
+          href="#"
+          className="block p-4 hover:bg-gray-100"
+        >
           Home
         </Link>
-        <Link href="#about" className="block p-4 hover:bg-gray-100">
+        <Link
+          onClick={() => {
+            sendGAEvent({ event: "buttonClicked", value: "About" });
+          }}
+          href="#about"
+          className="block p-4 hover:bg-gray-100"
+        >
           About
         </Link>
-        <Link href="#work-experience" className="block p-4 hover:bg-gray-100">
+        <Link
+          onClick={() => {
+            sendGAEvent({ event: "buttonClicked", value: "Experience" });
+          }}
+          href="#work-experience"
+          className="block p-4 hover:bg-gray-100"
+        >
           Experience
         </Link>
-        <Link href="#projects" className="block p-4 hover:bg-gray-100">
+        <Link
+          onClick={() => {
+            sendGAEvent({ event: "buttonClicked", value: "Projects" });
+          }}
+          href="#projects"
+          className="block p-4 hover:bg-gray-100"
+        >
           Projects
         </Link>
         <Link
+          onClick={() => {
+            sendGAEvent({ event: "buttonClicked", value: "Blogs" });
+          }}
           href="https://blogs.agrawalpratham.in/"
           className="block p-4 hover:bg-gray-100"
         >

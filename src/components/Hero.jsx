@@ -1,3 +1,4 @@
+import { sendGAEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -24,6 +25,9 @@ export default function Hero() {
               collaborating with teams to build amazing projects.
             </p>
             <Link
+              onClick={() => {
+                sendGAEvent({ event: "buttonClicked", value: "Resume" });
+              }}
               href="https://drive.google.com/file/d/1OVrswJHsqFC_02D2gdEcuPfqEBbmFOj8/view?usp=drive_link"
               target="_blank"
               className="btn btn--bg btn--theme  "
