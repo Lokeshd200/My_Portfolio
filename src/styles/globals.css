@@ -2,32 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    @apply scroll-smooth;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .btn {
+    @apply inline-block font-bold rounded shadow transition-transform duration-300 hover:-translate-y-1;
+  }
+  .btn--bg {
+    @apply py-4 px-8 text-xl;
+  }
+  .btn--med {
+    @apply py-2 px-4 md:py-3 md:px-6  text-base;
+  }
+  .btn--theme {
+    @apply bg-blue-600 text-white;
+  }
+  .btn--theme-inv {
+    @apply bg-white text-blue-600 border-2 border-blue-600;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animate-bounce {
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
+
+.home-hero__mouse-scroll-cont {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .home-hero__mouse-scroll-cont {
+    display: none;
+  }
+}
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #eee;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eee;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.75s infinite;
+  -webkit-animation: wheel 1.75s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(
+      to right,
+      rgba(0, 98, 185, 0.8),
+      rgba(0, 98, 185, 0.9),
+      rgba(0, 98, 185, 0.7)
+    ),
+    url("/assets/svg/common-bg.svg");
+}
+
+.after_style::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1rem);
+  height: 5px;
+  width: 2rem;
+  background: #0062b9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+@media only screen and (max-width: 37.5em) {
+  .after_style::after {
+    top: calc(100% + 1.2rem);
   }
 }
