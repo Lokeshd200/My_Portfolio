@@ -1,6 +1,6 @@
 import ScrollTop from "@/components/ScrollTop";
 import "@/styles/globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <ScrollTop />
       <Analytics />
-      <GoogleTagManager gtmId="G-4PGCTFP3XD" />
+      <GoogleAnalytics gtmId="G-4PGCTFP3XD" />
+      <GoogleTagManager gtmId="GT-5TQWV24K" />
     </>
   );
 }
