@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <ScrollTop />
       <Analytics />
-      <GoogleAnalytics gtmId="G-4PGCTFP3XD" />
+      <GoogleAnalytics gaId="G-4PGCTFP3XD" />
       <GoogleTagManager gtmId="GT-5TQWV24K" />
     </>
   );
