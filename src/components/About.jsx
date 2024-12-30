@@ -31,12 +31,6 @@ const skills = [
     name: "Babel",
     icon: "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg",
   },
-
-  {
-    name: "Redis",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg",
-  },
-
   {
     name: "Tailwind",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -46,17 +40,9 @@ const skills = [
     name: "Redux",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
   },
-
-  { name: "Material ", icon: "https://mui.com/static/logo.png" },
-
   {
     name: "NextJS",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg",
-  },
-
-  {
-    name: "Rust",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
   },
 
   {
@@ -67,11 +53,6 @@ const skills = [
   {
     name: "Express",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-  },
-
-  {
-    name: "Firebase",
-    icon: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
   },
 
   {
@@ -99,10 +80,6 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
   },
 
-  {
-    name: "GCP",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-  },
 ];
 
 export default function About() {
@@ -140,21 +117,14 @@ export default function About() {
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold md:mb-4">
                 Who I Am
               </h3>
-              <p className="text-gray-600 mb-4 pt-2">
-                I'm a <strong>Full Stack Web Developer</strong> with over two
-                years of experience in the field. I am passionate about
-                designing and developing websites that are not only visually
-                appealing but also highly functional.
-                <br />
-              </p>
               <p className="text-gray-600 mb-4">
-                During my experience, I have spearheaded the development of
-                various dynamic platforms including a restaurant discovery
-                platform akin to Zomato for the Israeli market, a sophisticated
-                Learning Management System (LMS) portal, and versatile web
-                applications with dual interfaces. Technologies used in these
-                projects include Next.js, ReactJS, Node.js, Firebase, AWS, and
-                Google Cloud Platform.
+              My name is Mellakanti Lokesh, and I am a recent BTech graduate in Computer 
+              Science and Engineering (2024). I specialize in MERN stack development, 
+              with hands-on experience building projects that demonstrate my technical 
+              expertise. Additionally, I am proficient in Python, further enhancing my 
+              ability to solve complex problems and deliver robust solutions. My 
+              academic and practical experiences reflect my passion for creating 
+              efficient, user-centric applications.
               </p>
               <p className="text-gray-600 mb-4">
                 In addition to my technical skills, I am a team player who

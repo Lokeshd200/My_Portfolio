@@ -16,7 +16,7 @@ export default function Hero() {
             triggerOnce
           >
             <h1 className=" text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-6">
-              Hi There! I'm Pratham Agrawal
+              Hi There! I'm Mellakanti Lokesh
             </h1>
             <p className="  text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl">
               Full Stack Web Developer specializing in creating dynamic and
@@ -24,16 +24,6 @@ export default function Hero() {
               reality with innovative and engaging solutions. Committed to
               collaborating with teams to build amazing projects.
             </p>
-            <Link
-              onClick={() => {
-                sendGAEvent({ event: "buttonClicked", value: "Resume" });
-              }}
-              href="https://drive.google.com/file/d/1OVrswJHsqFC_02D2gdEcuPfqEBbmFOj8/view?usp=drive_link"
-              target="_blank"
-              className="btn btn--bg btn--theme  "
-            >
-              Resume
-            </Link>
           </Slide>
         </div>
         <div className="flex-1 max-w-[50%] my-auto mx-auto rounded-xl sm:max-w-[40%] md:max-w-[30%]">
@@ -49,7 +39,7 @@ export default function Hero() {
               src="/assets/png/me.jpg"
               // src="/assets/png/me_bg_remove.png"
               className="   rounded-lg backdrop-blur-lg"
-              alt="image of pratham agrawal"
+              alt="image of Lokesh"
             />
           </Fade>
         </div>

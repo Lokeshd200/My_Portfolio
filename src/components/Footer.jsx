@@ -5,22 +5,12 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: "/assets/png/linkedin-ico.png",
-    url: "https://www.linkedin.com/in/agrawalpratham/",
+    url: "https://www.linkedin.com/in/lokesh-mellakanti/",
   },
   {
     name: "GitHub",
     icon: "/assets/png/github-ico.png",
-    url: "https://github.com/agrawal-pratham",
-  },
-  {
-    name: "Twitter",
-    icon: "/assets/png/twitter-ico.png",
-    url: "https://twitter.com/agrawal_2002",
-  },
-  {
-    name: "Instagram",
-    icon: "/assets/png/insta-ico.png",
-    url: "https://www.instagram.com/agrawal___pratham/",
+    url: "https://github.com/Lokeshd200",
   },
 ];
 
@@ -52,7 +42,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4">Pratham Agrawal</h2>
+            <h2 className="text-2xl font-semibold mb-4">Mellakanti Lokesh</h2>
             <p className="text-gray-200">
               Full Stack Web Developer passionate about creating interactive web
               applications and experiences. Reach out to me for innovative web
@@ -68,7 +58,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="font-semibold hover:text-white"
           >
-            Pratham Agrawal
+            Mellakanti Lokesh
           </Link>
         </div>
       </div>

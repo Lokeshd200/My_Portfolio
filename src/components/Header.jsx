@@ -38,7 +38,7 @@ export default function Header() {
               height={40}
             />
           </div>
-          <span className="text-xl font-bold">Pratham Agrawal</span>
+          <span className="text-xl font-bold">Mellakanti Lokesh</span>
         </Link>
 
         <nav className="hidden md:flex">
@@ -48,17 +48,8 @@ export default function Header() {
           <Link href="#about" className="mx-4 hover:text-blue-700">
             About
           </Link>
-          <Link href="#work-experience" className="mx-4 hover:text-blue-700">
-            Experience
-          </Link>
           <Link href="#projects" className="mx-4 hover:text-blue-700">
             Projects
-          </Link>
-          <Link
-            href="https://blogs.agrawalpratham.in/"
-            className="mx-4 hover:text-blue-700"
-          >
-            Blogs
           </Link>
         </nav>
 
@@ -110,30 +101,12 @@ export default function Header() {
         </Link>
         <Link
           onClick={() => {
-            sendGAEvent({ event: "buttonClicked", value: "Experience" });
-          }}
-          href="#work-experience"
-          className="block p-4 hover:bg-gray-100"
-        >
-          Experience
-        </Link>
-        <Link
-          onClick={() => {
             sendGAEvent({ event: "buttonClicked", value: "Projects" });
           }}
           href="#projects"
           className="block p-4 hover:bg-gray-100"
         >
           Projects
-        </Link>
-        <Link
-          onClick={() => {
-            sendGAEvent({ event: "buttonClicked", value: "Blogs" });
-          }}
-          href="https://blogs.agrawalpratham.in/"
-          className="block p-4 hover:bg-gray-100"
-        >
-          Blogs
         </Link>
       </nav>
     </header>

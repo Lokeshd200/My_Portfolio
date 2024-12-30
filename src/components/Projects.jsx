@@ -5,22 +5,48 @@ import { Fade, Zoom } from "react-awesome-reveal";
 const projects = [
   {
     id: "1",
-    title: "Tech Solutions",
-    image: "/assets/png/tech_solution.png",
+    title: "nxtTrendz (Shopping)",
+    image: "/assets/png/shopping.png",
     description:
-      "A comprehensive portfolio website for service-based companies developed using Next.js. Utilizes libraries such as React-Awesome-Reveal, react-icons, react-count-up, react-syntax-highlighter, and react-typed.",
-    technologies: ["Next.js", "Tailwind CSS", "Javascript", "Firebase"],
-    liveLink: "https://solutions.agrawalpratham.in",
-    codeLink: "https://github.com/agrawal-pratham/Tech-Solutions",
+      "The NxtTrendz Shopping Website is an e-commerce platform for purchasing clothes and gadgets. The frontend is built using React, JavaScript, and Bootstrap to provide a responsive and user-friendly interface. Backend communication is handled through REST APIs, with Axios used for making API calls to fetch and display product data dynamically. The platform enables users to browse products, view details, and add items to their cart seamlessly. The project focuses on creating an efficient and visually appealing shopping experience for users.",
+    technologies: ["React.js", "Bootstrap CSS", "Javascript", "Jsx","RESTApi","axios"],
+    codeLink: "https://github.com/Lokeshd200/nxtTrendz_shopping",
   },
   {
     id: "2",
-    title: "Zostel Clone",
-    image: "/assets/png/zostel_clone.png",
+    title: "AppStore",
+    image: "/assets/png/appstore.png",
     description:
-      "Trip planner with best places to visit and hotels for stay. Executed in under 1 week with a team of 3. Responsible for leading the team. LongStay and BookNow page of website.",
+      "The AppStore Project is a web platform designed to browse and search for applications. It is built using React with class components for managing state and lifecycle methods. Bootstrap was used for responsive and visually appealing design. The project includes features like searching for apps, filtering by categories, and displaying app details. By leveraging React class components, the application efficiently handles data and interactions, providing a smooth and interactive user experience.",
     technologies: ["React Js", "HTML", "CSS", "Javascript"],
-    codeLink: "https://github.com/agrawal-pratham/Project_Zostel",
+    codeLink: "https://github.com/Lokeshd200/AppStore",
+  },
+  {
+    id: "3",
+    title: "Task-Manager",
+    image: "/assets/png/task.png",
+    description:
+      "The Task Manager Project is a web-based application designed to manage tasks efficiently. It was built using React (with functional components), JavaScript, and Bootstrap for styling and responsive design. Key features include adding tasks, filtering tasks by status, searching tasks using a search bar, and inline editing or deletion of tasks using a dynamic task table. It also integrates with a placeholder API using Axios to fetch task data and follows the REST API structure. Additional libraries like React-Tabulator and React-Toastify were used for an interactive user experience and notifications.",
+    technologies: ["React Js", "Node Js", "tailwind css", "Javascript","axios","RESTApi's"],
+    codeLink: "https://github.com/Lokeshd200/tasl-list-manager",
+  },
+  {
+    id: "4",
+    title: "Cash-Withdrawal",
+    image: "/assets/png/pay.png",
+    description:
+      "The Cash Withdrawal Project is a frontend app built with React, JavaScript, and Bootstrap. It simulates a banking feature where users can withdraw money by clicking on predefined withdrawal amounts. The account balance updates dynamically using React state management. The application showcases event handling and interactive UI updates. Styling and responsiveness are achieved with CSS and Bootstrap.",
+    technologies: ["React Js", "HTML", "CSS", "Javascript"],
+    codeLink: "https://github.com/Lokeshd200/CashWithdrawal",
+  },
+  {
+    id: "5",
+    title: "Logi Page",
+    image: "/assets/png/login.png",
+    description:
+      "The Login Page is a frontend application built using React and JavaScript. It includes a form where users can input their credentials, such as username and password. React's state management is used to handle form data and input validation. The form's submission triggers an authentication process, which can be extended to work with APIs for user verification. Styling is achieved using CSS or Bootstrap for responsiveness and clean design.",
+    technologies: ["React Js", "HTML", "CSS", "Javascript"],
+    codeLink: "https://github.com/Lokeshd200/login-details",
   },
 ];
 
